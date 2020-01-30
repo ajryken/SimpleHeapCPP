@@ -30,7 +30,7 @@ heap::heap(int max)
 	size = 0;
 }
 
-//PUSHES NODE ONTO HEAP
+//INSERTS NODE INTO HEAP
 void heap::insert(int k, string d)
 {
 	if(size >= max_size){
@@ -57,7 +57,7 @@ void heap::insert(int k, string d)
 	}
 }
 
-//POPS NODE OFF HEAP
+//REMOVES NODE FROM HEAP
 node heap::remove()
 {
 	node root = array[0];
